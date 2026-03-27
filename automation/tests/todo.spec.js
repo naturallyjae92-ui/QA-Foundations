@@ -8,7 +8,8 @@ test.describe("TodoMVC (Playwright Demo)", () => {
     await input.fill("Buy groceries");
     await input.press("Enter");
 
-await expect(page.locator(".todo-list li")).toContainText("Buy groceries"); });
+await expect(page.locator(".todo-list li")).toContainText("Buy groceries");
+});
 
   test("TD-02: Complete a todo item", async ({ page }) => {
     await page.goto("https://demo.playwright.dev/todomvc/");
